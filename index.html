@@ -1,1 +1,50 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+  
+  <script src="js/scritp1.js"></script>
+</head>
+  <body>
+    <header>
+      <h1>VENDINHA DO ZÉ</h1>
+    </header>
+    <main>
+      <div class="title">
+          <h2>Tabela de Produtos</h2>
+      </div>
+      <div class=card>
+        <div class="lineInput">
+          <label>Produto</label>
+          <input type="text"id="produto" placeholder="Nome do Produto">
+        </div>
+        <div class="lineInput">
+          <label>Valor</label>
+          <input type="text"id="valor" placeholder="Valor do Produto">        
+        </div>
+         <button onclick="produto.adicionar()">Adicionar</button>
+         <button onclick="produto.excluir()">Deletar</button>
+      </div>
+    </div>
+    <div class="content">
+      <table border=1>
+        <thead>
+          <th>ID</th>
+          <th>Produto</th>
+          <th>Valor</th>
+        </thead>
+        <tbody id="tbody">
+        
+        </tbody>
+      </table>
+    </div>
+    </main>
+  </body>
+</html>
